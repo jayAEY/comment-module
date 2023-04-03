@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comments</title>
+</head>
+<body>
+    <div id="comment-panel">
+        <div class="thread">
+            <div class="comment">
+                <span class="line"></span>
+                    <a href="#"><img src="/Assets/User Avatar.png" class="avatar"></a>
+                        <div class="comment-text">
+                            <div class="comment-top"><a class="username" href="#">adamsdavid</a> <p class="time-posted">20 hours ago</p> </div>
+                            <p>I genuinely think that Codewell's community is AMAZING. It's just starting out but the templates on here are amazing 👀 </p>
+                            <div class="comment-bottom"> <div class="rating"> <a href="#"><img src="Assets/Up.svg"></a> <h5>2</h5> <a href="#"><img src="Assets/Down.svg"></a></div> <a href="#">Reply</a> <a href="#">Report</a> </div>
+                        </div> 
+            </div>
+            <div class="comment" id="reply-1">
+                <span class="line"></span>
+                    <a href="#"><img src="/Assets/User Avatar-1.png" class="avatar"></a>
+                        <div class="comment-text">
+                            <div class="comment-top"><a class="username" href="#">saramay</a> <p class="time-posted">16 hours ago</p> </div>
+                            <p>I agree. I've been coding really well (pun intended) ever since I started practicing on their templlates hehe. </p>
+                            <div class="comment-bottom"> <div class="rating"> <a href="#"><img src="Assets/Up.svg"></a> <h5>5</h5> <a href="#"><img src="Assets/Down.svg"></a></div> <a href="#">Reply</a> <a href="#">Report</a> </div>
+                        </div> 
+            </div>
+            <div class="comment" id="reply-2">
+                <span class="line"></span>
+                    <a href="#"><img src="/Assets/User Avatar-2.png" class="avatar"></a>
+                        <div class="comment-text">
+                            <div class="comment-top"><a class="username" href="#">jessica21</a> <p class="time-posted">14 hours ago</p> </div>
+                            <p>Okay, this comment wins. </p>
+                            <div class="comment-bottom"> <div class="rating"> <a href="#"><img src="Assets/Up.svg"></a> <h5>5</h5> <a href="#"><img src="Assets/Down.svg"></a></div> <a href="#">Reply</a> <a href="#">Report</a> </div>
+                        </div> 
+            </div>
+        </div>    
+        <div class="thread">
+            <div class="comment">
+                <span class="line"></span>
+                    <a href="#"><img src="/Assets/User Avatar-3.png" class="avatar"></a>
+                        <div class="comment-text">
+                            <div class="comment-top"><a class="username" href="#">andrew231</a> <p class="time-posted">20 hours ago</p> </div>
+                            <p>Thanks for making this, super helpful </p>
+                            <div class="comment-bottom"> <div class="rating"> <a href="#"><img src="Assets/Up.svg"></a> <h5>2</h5> <a href="#"><img src="Assets/Down.svg"></a></div> <a href="#">Reply</a> <a href="#">Report</a> </div>
+                        </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: conic-gradient(from 135deg, #fbaaf6, #f7896f, #ffba74, #908ff7, #fbaaf6);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rubik', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    #comment-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 90%;
+        height: auto;
+        max-width: 600px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #f7896f;
+        opacity: 0.5;
+    }
+
+    .line {
+        left: 19px;
+        top: 50px;
+        position: absolute;
+        width: 1px;
+        height: 100vh;
+        background-color: lightgray;
+    }
+
+    .thread {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        height: auto;
+        gap: 10px;
+        contain: content;
+    }
+
+    .comment {
+        display: flex;
+        width: 100%;
+        height: auto;
+        contain: layout;
+    }
+
+    .comment-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #reply-1 {
+        width: auto;
+        margin-left: 55px;
+    }
+
+    #reply-2 {
+        width: auto;
+        margin-left: 109px;
+    }
+
+    .username {
+        font-weight: 500;
+        font-size: 0.75rem;
+    }
+
+    .time-posted {
+        color: #969696;
+        font-size: 0.75rem;
+
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 13px;
+    }
+
+    .comment-top,
+    .comment-bottom {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        flex-wrap: wrap;
+
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    
+</style>
+</html>
